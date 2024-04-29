@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showMen()">Men</a></li>
+                <li><a href="#" onclick="showWomen()">Women</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="clothing-section-container">
+            <section id="men-section" class="clothing-section">
+                <h2>Men's Clothing</h2>
+                <div class="clothing-items">
+                    <!-- Men's clothing photos with "Add to Cart" buttons -->
+                    <!-- Repeat this block for each men's clothing item -->
+                    <div class="clothing-item">
+                        <img src="nike 1.avif" alt="Men's Clothing 1">
+                        <p class="price">Rs.1960</p>
+                            <p class="ogp">3920</p>
+                                <p class="discount">50% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="nike 2.jpeg" alt="Men's Clothing 2">
+                        <p class="price">Rs.3776</p>
+                        <p class="ogp">4720</p>
+                        <p class="discount">20% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="m3.jpeg" alt="Men's Clothing 3">
+                        <p class="price">Rs.3864</p>
+                        <p class="ogp">5520</p>
+                        <p class="discount">30% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="m4.jpeg" alt="Men's Clothing 4">
+                        <p class="price">Rs.5372</p>
+                        <p class="ogp">6320</p>
+                        <p class="discount">15% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="m5.jpeg" alt="Men's Clothing 5">
+                        <p class="price">Rs.6408</p>
+                        <p class="ogp">7120</p>
+                        <p class="discount">10% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- End of men's clothing items -->
+                </div>
+            </section>
+
+            <section id="women-section" class="clothing-section" style="display:none;">
+                <h2>Women's Clothing</h2>
+                <div class="clothing-items">
+                    <!-- Women's clothing photos with "Add to Cart" buttons -->
+                    <!-- Repeat this block for each women's clothing item -->
+                    <div class="clothing-item">
+                        <img src="w1.webp" alt="Women's Clothing 1">
+                        <p class="price">Rs.1560</p>
+                        <p class="ogp">3120</p>
+                        <p class="discount">50% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="w2.webp" alt="Women's Clothing 2">
+                        <p class="price">Rs.3776</p>
+                        <p class="ogp">4720</p>
+                        <p class="discount">30% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="w3.webp" alt="Women's Clothing 3">
+                        <p class="price">Rs.3776</p>
+                        <p class="ogp">4720</p>
+                        <p class="discount">20% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="w4.jpeg" alt="Women's Clothing 4">
+                        <p class="price">Rs.4692</p>
+                        <p class="ogp">5520</p>
+                        <p class="discount">15% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="clothing-item">
+                        <img src="w5.avif" alt="Women's Clothing 5">
+                        <p class="price">Rs.5668</p>
+                        <p class="ogp">6320</p>
+                        <p class="discount">10% off</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- End of women's clothing items -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clothing Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menSection = document.getElementById('men-section');
+        const womenSection = document.getElementById('women-section');
+
+        function showMen() {
+            menSection.style.display = 'block';
+            womenSection.style.display = 'none';
+        }
+
+        function showWomen() {
+            menSection.style.display = 'none';
+            womenSection.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
